@@ -35,6 +35,7 @@
 				"ms-azuretools.vscode-docker",
 				"ms-iot.vscode-ros",
 				"ms-python.python",
+				"ms-python.autopep8",
 				"ms-vscode.cpptools",
 				"redhat.vscode-yaml",
 				"smilerobotics.urdf",

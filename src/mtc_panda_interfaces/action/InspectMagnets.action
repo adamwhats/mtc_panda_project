@@ -1,0 +1,8 @@
+# Request
+std_msgs/Empty trigger
+---
+# Result
+std_msgs/Int32 magnets_found
+---
+# Feedback
+builtin_interfaces/Time time_elapsed

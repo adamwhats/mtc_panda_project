@@ -9,19 +9,29 @@
         "*.xacro": "xml"
     },
     "python.analysis.extraPaths": [
-        "/opt/ros/humble/lib/python3.10/site-packages/"
+        "/workspaces/mtc_panda_project/build/magtec_system",
+        "/workspaces/mtc_panda_project/install/local/lib/python3.10/dist-packages",
+        "/workspaces/mtc_panda_project/install/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages"
     ],
     // Autocomplete from ros python packages
     "python.autoComplete.extraPaths": [
-        "/opt/ros/humble/lib/python3.10/site-packages/"
+        "/workspaces/mtc_panda_project/build/magtec_system",
+        "/workspaces/mtc_panda_project/install/local/lib/python3.10/dist-packages",
+        "/workspaces/mtc_panda_project/install/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages"
     ],
     // Environment file lets vscode find python files within workspace
     "python.envFile": "${workspaceFolder}/.env",
     // Use the system installed version of autopep8
-    "python.formatting.autopep8Path": "/usr/bin/autopep8",
-    "python.formatting.autopep8Args": [
-        "--max-line-length=100"
-    ],
+    "autopep8.path": ["/usr/bin/autopep8"],
+    "autopep8.args": ["--max-line-length=100"],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true
+    },
     "C_Cpp.default.intelliSenseMode": "linux-gcc-x86",
     "C_Cpp.formatting": "disabled",
     "uncrustify.configPath.linux": "/opt/ros/humble/lib/python3.10/site-packages/ament_uncrustify/configuration/ament_code_style.cfg",
@@ -37,7 +47,6 @@
         "**/log": true
     },
     "cSpell.words": [
-        "RTPS",
         "athackst",
         "autopep",
         "cmake",
@@ -46,7 +55,11 @@
         "DCMAKE",
         "deque",
         "devcontainer",
+        "franka",
+        "hstack",
         "ints",
+        "moveit",
+        "ndarray",
         "noqa",
         "pytest",
         "rclcpp",
@@ -56,9 +69,12 @@
         "rosdistro",
         "rosidl",
         "RTPS",
+        "rviz",
         "uncrustify",
+        "urdf",
         "Wextra",
         "Wpedantic",
+        "xacro",
         "xmllint"
     ],
     "cSpell.allowCompoundWords": true,
